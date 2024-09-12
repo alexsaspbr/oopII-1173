@@ -1,3 +1,5 @@
+package exercicios.resolucao;
+
 import java.util.Scanner;
 
 public class Main {
@@ -19,14 +21,14 @@ public class Main {
                     System.out.print("Digite o valor do raio do circulo: ");
                     double raio = sc.nextDouble();
 
-                    Circulo circulo = new Circulo(raio);
+                    exercicios.resolucao.Circulo circulo = new exercicios.resolucao.Circulo(raio);
                     System.out.printf("A área do circulo de raio %.0fcm é %.2f cm²\n\n",raio, circulo.calcularArea());;
                     break;
                 case "2":
                     System.out.print("Digite o valor da base do quadrado: ");
                     double baseQuadrado = sc.nextDouble();
 
-                    Quadrado quadrado = new Quadrado(baseQuadrado);
+                    exercicios.resolucao.Quadrado quadrado = new exercicios.resolucao.Quadrado(baseQuadrado);
                     System.out.printf("A área do quadrado de base %.0fcm é %.2f cm²\n\n",baseQuadrado, quadrado.calcularArea());
                     break;
                 case "3":
@@ -34,7 +36,7 @@ public class Main {
                     double baseTriangulo = sc.nextDouble();
                     System.out.print("Agora digite o valor da altura: ");
                     double altura = sc.nextDouble();
-                    Triangulo triangulo = new Triangulo(baseTriangulo, altura);
+                    exercicios.resolucao.Triangulo triangulo = new exercicios.resolucao.Triangulo(baseTriangulo, altura);
                     System.out.printf("A área do triangulo de base %.0fcm e altura %.0fcm é  %.2f cm²\n\n",baseTriangulo, altura, triangulo.calcularArea());
                     break;
                 case "4":

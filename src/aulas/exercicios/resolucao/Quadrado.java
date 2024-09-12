@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package exercicios.resolucao;
 
 public class Quadrado implements AreaCalculavel{
     private double base;

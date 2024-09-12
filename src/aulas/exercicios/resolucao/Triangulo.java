@@ -1,6 +1,4 @@
-
-
-import java.util.Scanner;
+package exercicios.resolucao;
 
 public class Triangulo implements AreaCalculavel {
 
