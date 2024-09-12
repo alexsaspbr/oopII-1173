@@ -1,6 +1,4 @@
-import interfaces.Aquatico;
-
-public class Barco extends Navio implements Aquatico {
+public class Barco extends Aquatico {
 
     @Override
     public void navegar() {
