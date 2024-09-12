@@ -1,18 +1,7 @@
-## Getting Started
+1. Crie um programa java que faça o calculo da área de figuras geometricas ( quadrado, retangulo, triangulo, etc. ). Este projeto deve fazer criar uma interface para o calculo da area da figura geometrica e deve ter varias classes que façam o calculo da area e que implementem a interface. O programa deve ter um menu que mostre as figuras ( quadrado, retangulo, triangulo, losango e fim ). De acordo com a opção, o programa de instanciar um objeto da classe correspondente e chamar o metodo que calcula a area, passando os parametros que forem necessarios e que devem ser informados pelo teclado.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```java
+interface AreaCalculavel {
+  double calculaArea();
+}
+```
