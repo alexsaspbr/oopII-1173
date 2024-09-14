@@ -23,7 +23,14 @@ public class PilhaImpl<E> implements Pilha<E> {
 
     @Override
     public E peek() throws Exception {
-        return null;
+        try {
+            if(this.pilha.isEmpty()){
+               throw new RuntimeException("Pilha vazia");
+            }
+            return null;
+        } catch(Exception e) {
+            throw e;
+        }
     }
 
     @Override
