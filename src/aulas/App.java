@@ -1,24 +1,28 @@
+import bancodados.OracleDB;
+import interfaces.Persistence;
+import interfaces.Pilha;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class App {
+
     public static void main(String[] args) throws Exception {
-        
-        Navio navio = new Navio();
-        Barco barco = new Barco();
-        TanqueAnfibio tanqueAnfibio = new TanqueAnfibio();
 
-        somenteAquaticos(navio);
-        somenteAquaticos(barco);
-        aceletarVeiculos(barco);
-        somenteAquaticos(tanqueAnfibio);
-    }
+        Persistence persistence = new OracleDB();
+        persistence.save(1, new Contato());
 
-    public static void somenteAquaticos(Aquatico veiculo) {
-        veiculo.navegar();
-    }
+        List<Integer> lista = new ArrayList();
+        //lista.add("Alex");
+        lista.add(1);
 
-    public static void aceletarVeiculos(Veiculo veiculo) {
-        veiculo.acelerar();
+        for(Object obj : lista) {
+            System.out.println(obj);
+        }
+
+        Pilha<Integer> pilhaInteiros = new PilhaImpl<>();
+        pilhaInteiros.push(1);
+
     }
 
 }
