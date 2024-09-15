@@ -5,41 +5,60 @@ import java.util.List;
 
 public class PilhaImpl<E> implements Pilha<E> {
 
-    private final List<E> pilha;
+    private final List<E> elementos;
 
+
+    // construtor
     public PilhaImpl() {
-        this.pilha = new ArrayList<E>();
+
+        this.elementos = new ArrayList<E>();
     }
 
+
+    // metodos
     @Override
     public void push(E elemento) {
+        {
+            elementos.add(elemento); //??
+        }
 
     }
 
     @Override
     public E pop() {
-        return null;
+        if (elementos.isEmpty()) {
+            return null;
+        }
+        E elemento = elementos.get(size() - 1);
+        this.elementos.remove(size() - 1);
+        return elemento;
     }
 
-    @Override
-    public E peek() throws Exception {
-        try {
-            if(this.pilha.isEmpty()){
-               throw new RuntimeException("Pilha vazia");
-            }
-            return null;
-        } catch(Exception e) {
-            throw e;
+
+    public E peek() throws RuntimeException {
+
+        if (this.isEmpty()) {
+            throw new RuntimeException("Pilha vazia");
         }
+        return this.elementos.get(size() - 1);
+
     }
 
     @Override
     public int size() {
-        return this.pilha.size();
+        return this.elementos.size();
     }
+
 
     @Override
     public boolean isEmpty() {
-        return this.pilha.isEmpty();
+        return this.elementos.isEmpty();
+    }
+
+    @Override
+    public String toString() {
+        return "Pilha{" + elementos +
+
+                '}';
     }
 }
