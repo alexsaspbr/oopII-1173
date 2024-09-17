@@ -1,4 +1,4 @@
-package exercicios.resolucao;
+package exercicios.resolucao.areacalculavel.matheuslima;
 
 public class Triangulo implements AreaCalculavel {
 

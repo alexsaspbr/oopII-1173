@@ -1,4 +1,4 @@
-package exercicios.resolucao;
+package exercicios.resolucao.areacalculavel.matheuslima;
 
 public class Quadrado implements AreaCalculavel{
     private double base;

@@ -1,10 +1,4 @@
-import bancodados.OracleDB;
-import interfaces.Email;
-import interfaces.Persistence;
-import interfaces.Pilha;
-
-import java.util.ArrayList;
-import java.util.List;
+import exercicios.resolucao.pilha.matheusgomes.Delivery;
 
 public class App {
 
@@ -24,14 +18,15 @@ public class App {
 //        Pilha<Integer> pilhaInteiros = new PilhaImpl<>();
 //        pilhaInteiros.push(1);
 
-        Email<PDF> email = new Outlook();
-        envioEmail(email, "mensagem");
+//        Email<PDF> email = new Outlook();
+//        envioEmail(email, "mensagem");
+//
+//
+//    }
+//
+//    public static void envioEmail(Email<PDF> email, String mensagem) {
+//         email.enviarMensagem(mensagem, new PDF());
+//    }
 
-
-    }
-
-    public static void envioEmail(Email<PDF> email, String mensagem) {
-         email.enviarMensagem(mensagem, new PDF());
-    }
-
+}
 }
