@@ -1,4 +1,4 @@
-package aula2;
+package exercicios.resolucao.pilha.priscila;
 
 public class MainInteiros {
     public static void main(String[] args) throws Exception {

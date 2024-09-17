@@ -1,4 +1,4 @@
-package aula2;
+package exercicios.resolucao.pilha.priscila;
 
 public interface Pilha<E> {
     void push(E elemento);

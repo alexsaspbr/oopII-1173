@@ -1,4 +1,4 @@
-package aula2;
+package exercicios.resolucao.pilha.priscila;
 
 import java.util.ArrayList;
 import java.util.List;
