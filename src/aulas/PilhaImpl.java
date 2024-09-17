@@ -18,17 +18,30 @@ public class PilhaImpl<E> implements Pilha<E> {
     // metodos
     @Override
     public void push(E elemento) {
+        {
+            elementos.add(elemento); //??
+        }
 
     }
 
     @Override
     public E pop() {
-        return null;
+        if (elementos.isEmpty()) {
+            return null;
+        }
+        E elemento = elementos.get(size() - 1);
+        this.elementos.remove(size() - 1);
+        return elemento;
     }
 
 
     public E peek() throws RuntimeException {
-        return null;
+
+        if (this.isEmpty()) {
+            throw new RuntimeException("Pilha vazia");
+        }
+        return this.elementos.get(size() - 1);
+
     }
 
     @Override
@@ -40,6 +53,13 @@ public class PilhaImpl<E> implements Pilha<E> {
     @Override
     public boolean isEmpty() {
         return this.elementos.isEmpty();
+    }
+
+    @Override
+    public String toString() {
+        return "Pilha{" + elementos +
+
+                '}';
     }
 
 }

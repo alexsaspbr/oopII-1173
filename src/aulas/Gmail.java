@@ -1,12 +1,12 @@
 import interfaces.Email;
 
-public class Gmail implements Email {
-     public void enviarMensagem(String mensagem) {
 
-    }
+public class Gmail<T> implements Email<T> {
+
 
     @Override
-    public void enviarMensagem(String mensagem, Object anexo) {
+    public void enviarMensagem(String mensagem, T anexo) {
+
 
     }
 }
