@@ -1,3 +1,5 @@
+package email;
+
 import interfaces.Email;
 
 

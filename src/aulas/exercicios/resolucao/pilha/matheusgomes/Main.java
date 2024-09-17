@@ -15,17 +15,17 @@ public class Main {
 //            System.out.println(obj);
 //        }
 //
-//        Pilha<Integer> pilhaInteiros = new PilhaImpl<>();
+//        Pilha<Integer> pilhaInteiros = new exercicios.resolucao.pilha.vanessa.PilhaImpl<>();
 //        pilhaInteiros.push(1);
 
-//        Email<PDF> email = new Outlook();
+//        Email<email.PDF> email = new email.Outlook();
 //        envioEmail(email, "mensagem");
 //
 //
 //    }
 //
-//    public static void envioEmail(Email<PDF> email, String mensagem) {
-//         email.enviarMensagem(mensagem, new PDF());
+//    public static void envioEmail(Email<email.PDF> email, String mensagem) {
+//         email.enviarMensagem(mensagem, new email.PDF());
 //    }
 
     Delivery pizza = new Delivery();
