@@ -1,5 +1,4 @@
-
-import interfaces.Stack;
+package exercicios.resolucao.pilha.matheusgomes;
 
 import java.util.ArrayList;
 import java.util.List;

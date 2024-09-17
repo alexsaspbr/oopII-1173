@@ -1,6 +1,5 @@
 package bancodados;
 
-import exercicios.resolucao.Circulo;
 import interfaces.Persistence;
 
 public class MeuBancoDados<Circulo> implements Persistence<Integer, Circulo> {

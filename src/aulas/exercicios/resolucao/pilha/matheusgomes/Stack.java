@@ -1,4 +1,4 @@
-package interfaces;
+package exercicios.resolucao.pilha.matheusgomes;
 
 public interface Stack<E> {
     void push(E element);
