@@ -1,11 +1,9 @@
 package interfaces;
 
-public interface Pilha<E> {
-
-    void push(E elemento);
-    E pop();
+public interface Stack<E> {
+    void push(E element);
+    E pop() throws Exception;
     E peek() throws Exception;
     int size();
     boolean isEmpty();
-
 }
