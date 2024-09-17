@@ -3,35 +3,57 @@ import interfaces.Email;
 import interfaces.Persistence;
 import interfaces.Pilha;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class App {
 
     public static void main(String[] args) throws Exception {
+/*        List<Integer> numeros = new ArrayList<>();
+        numeros.add(10);
+        numeros.add(7);
+        numeros.add(9);
+        Collections.sort(numeros);
+        System.out.println(numeros);*/
 
-//        Persistence persistence = new OracleDB();
-//        persistence.save(1, new Contato());
+        List<Pessoa> pessoas = new ArrayList<>();
+        List<PessoaFisica> pessoasFisica = new ArrayList<>();
 
-//        List<Integer> lista = new ArrayList();
-//        //lista.add("Alex");
-//        lista.add(1);
-//
-//        for(Object obj : lista) {
-//            System.out.println(obj);
-//        }
-//
-//        Pilha<Integer> pilhaInteiros = new PilhaImpl<>();
-//        pilhaInteiros.push(1);
+        pessoasFisica.add(new PessoaFisica("789"));
+        pessoasFisica.add(new PessoaFisica("123"));
+        pessoasFisica.add(new PessoaFisica("456"));
+        List<PessoaJuridica> pessoasJuridica = new ArrayList<>();
 
-        Email<PDF> email = new Outlook();
-        envioEmail(email, "mensagem");
+        imprimirSuper(pessoas);
+        //imprimirSuper(pessoasFisica);
+        //imprimirSuper(pessoasJuridica);
+        imprimirExtends(pessoasFisica);
+        imprimirExtends(pessoasJuridica);
+        imprimirExtends(pessoas);
+
+       /* Collections.sort(pessoasFisica);
+        System.out.println(pessoasFisica);*/
+        List<Funcionario> funcionarios = new ArrayList<>();
+
+        funcionarios.add(new Funcionario("Alex", new BigDecimal("1000.0")));
+        funcionarios.add(new Funcionario("Matheus Lima", new BigDecimal("10000.0")));
+        funcionarios.add(new Funcionario("Vanessa", new BigDecimal("15000.0")));
+        funcionarios.add(new Funcionario("Lucas", new BigDecimal("12000.0")));
+
+        Collections.sort(funcionarios);
+        System.out.println(funcionarios);
 
 
     }
 
-    public static void envioEmail(Email<PDF> email, String mensagem) {
-         email.enviarMensagem(mensagem, new PDF());
+    public static void imprimirSuper(List<? super Pessoa> pessoas) {
+
+    }
+
+    public static void imprimirExtends(List<? extends Pessoa> pessoas) {
+
     }
 
 }
