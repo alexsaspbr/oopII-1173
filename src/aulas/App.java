@@ -1,12 +1,13 @@
-import bancodados.OracleDB;
-import interfaces.Email;
-import interfaces.Persistence;
-import interfaces.Pilha;
+import funcionario.Funcionario;
+import pessoa.Pessoa;
+import pessoa.PessoaFisica;
+import pessoa.PessoaJuridica;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Queue;
 
 public class App {
 
@@ -44,7 +45,6 @@ public class App {
 
         Collections.sort(funcionarios);
         System.out.println(funcionarios);
-
 
     }
 

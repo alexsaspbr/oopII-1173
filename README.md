@@ -17,3 +17,43 @@ interface AreaCalculavel {
 - **isEmpty** que retorna um booleano indicando se a pilha está vazia ou não.
 
 Implemente essa interface utilizando ArrayList, não vale utilizar a própria Stack do Java rsrs. Faça no seu método main exemplos do uso dos métodos citados.
+
+----
+
+3. Observe a classe abaixo, e refatore para que a mesma possa receber qualquer tipo que herde da classe Number. Utilize generics para esta tarefa.
+
+```java
+public class Calculo {
+
+    public Integer numero;
+    public Double numeroD;
+
+    public Calculo(Integer numero){
+        this.numero = numero;
+    }
+
+    public Calculo(Double numeroD){
+        this.numeroD = numeroD;
+    }
+
+    public Integer quadrado() {
+        return this.numero * this.numero;
+    }
+
+    public Double quadradoDouble() {
+        return this.numeroD * this.numeroD;
+    }
+
+}
+
+```
+
+4. Crie uma interface Fila genérica que possui o comportamento de FIFO (First in, First out), primeiro a entrar é o primeiro a sair, com os métodos:
+
+- **add** ou adicionar que recebe um elemento e adiciona na fila;
+- **peek** ou espiar, que retorna o primeiro elemento da fila sem removê-lo. Caso a fila esteja vazia retorna **null**;
+- **poll** recupera e remove o primeiro elemento da fila. Caso a fila esteja vazia retorna **null**;;
+- **size** que retorna a quantidade de elementos na fila;
+- **isEmpty** que retorna um booleano indicando se a fila está vazia ou não.
+
+Crie a classe FilaImpl que implementa essa interface utilizando ArrayList, não vale utilizar a própria Queue do Java rsrs. Faça no seu método main exemplos do uso dos métodos citados.
