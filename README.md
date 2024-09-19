@@ -48,6 +48,8 @@ public class Calculo {
 
 ```
 
+----
+
 4. Crie uma interface Fila genérica que possui o comportamento de FIFO (First in, First out), primeiro a entrar é o primeiro a sair, com os métodos:
 
 - **add** ou adicionar que recebe um elemento e adiciona na fila;
@@ -57,3 +59,41 @@ public class Calculo {
 - **isEmpty** que retorna um booleano indicando se a fila está vazia ou não.
 
 Crie a classe FilaImpl que implementa essa interface utilizando ArrayList, não vale utilizar a própria Queue do Java rsrs. Faça no seu método main exemplos do uso dos métodos citados.
+
+----
+
+5. Com base no principio da responsabilidade única, refatore o método da classe BolsaValores e se possível utilize streams:
+
+```java
+
+    public class BolsaValores {
+
+        public BigDecimal calcularPrecoMedioAcoesOrdinarias(List<Acao> acoes) {
+            BigDecimal valorTotalOrdinarias = BigDecimal.ZERO;
+            Long quantidadeOrdinarias = 0L;
+            for(Acao acao : acoes) {
+                if(acao.isOrdinaria()) {
+                    valorTotalOrdinarias.add(acao.getValor());
+                    quantidadeOrdinarias++;
+                }
+            }
+
+            return valorTotalOrdinarias.divide(new BigDecimal(quantidadeOrdinarias));
+
+        }
+
+    }
+
+    class Acao {
+
+    private String nome;
+    private BigDecimal valor;
+    private Boolean ordinaria;
+
+    public Boolean isOrdinaria() {
+        return ordinaria;
+    }
+
+}
+  
+```
