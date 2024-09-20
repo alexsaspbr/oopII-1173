@@ -1,6 +1,6 @@
-package cadastro.controller;
+package solid.principio.responsabilidade.unica.controller;
 
-import cadastro.service.CadastroService;
+import solid.principio.responsabilidade.unica.service.CadastroService;
 
 public class CadastroController {
 

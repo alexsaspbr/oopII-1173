@@ -1,4 +1,4 @@
-package bancario;
+package solid.principio.aberto.fechado;
 
 import java.math.BigDecimal;
 

@@ -1,6 +1,6 @@
-package cadastro.service;
+package solid.principio.responsabilidade.unica.service;
 
-import cadastro.repository.CadastroRepository;
+import solid.principio.responsabilidade.unica.repository.CadastroRepository;
 
 public class CadastroService {
 
