@@ -27,12 +27,4 @@ public class App {
 
     }
 
-    public static void imprimirSuper(List<? super Pessoa> pessoas) {
-
-    }
-
-    public static void imprimirExtends(List<? extends Pessoa> pessoas) {
-
-    }
-
 }
