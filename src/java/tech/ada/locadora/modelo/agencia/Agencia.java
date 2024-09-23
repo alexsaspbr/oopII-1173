@@ -5,5 +5,6 @@ public class Agencia {
     private Long identificador;
     private String nome;
     private Long distancia;
+    private String endereco;
 
 }

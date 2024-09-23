@@ -1,6 +1,7 @@
 import tech.ada.locadora.modelo.veiculo.Carro;
 import tech.ada.locadora.servico.VeiculoService;
 import tech.ada.locadora.servico.VeiculoServiceImpl;
+import tech.ada.locadora.view.Locadora;
 
 public class App {
 
