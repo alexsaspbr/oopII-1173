@@ -2,8 +2,10 @@ package tech.ada.locadora.modelo.aluguel;
 
 import java.time.LocalDateTime;
 
-public class Devolucao extends Aluguel {
+public class Devolucao {
 
-    private LocalDateTime getDataDevolucaoFinal;
+    private Aluguel aluguel;
+    private LocalDateTime dataDevolucaoFinal;
+    protected Boolean devolvido;
 
 }

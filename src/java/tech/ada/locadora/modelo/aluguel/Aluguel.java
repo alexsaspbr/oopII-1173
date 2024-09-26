@@ -13,6 +13,8 @@ public class Aluguel {
     protected Veiculo veiculo;
     protected LocalDateTime dataInicio;
     protected LocalDateTime dataDevolucaoPrevista;
+    protected LocalDateTime dataDevolucaoFinal;
+    protected Boolean devolvido;
 
     public Pessoa getCliente() {
         return cliente;
