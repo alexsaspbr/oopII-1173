@@ -10,8 +10,8 @@ public class VeiculoRepositoryImpl<T extends Veiculo> extends VeiculoReposity<T>
 
     public List<T> bancoDados;
 
-    public VeiculoRepositoryImpl() {
-        this.bancoDados = new ArrayList<>();
+    public VeiculoRepositoryImpl(List<T> bancoDados) {
+        this.bancoDados = bancoDados;
     }
 
     @Override

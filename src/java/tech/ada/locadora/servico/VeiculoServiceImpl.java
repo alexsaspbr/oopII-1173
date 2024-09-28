@@ -10,8 +10,8 @@ public class VeiculoServiceImpl<T extends Veiculo> implements VeiculoService<T> 
 
     private VeiculoReposity<T> veiculoReposity;
 
-    public VeiculoServiceImpl() {
-        this.veiculoReposity = new VeiculoRepositoryImpl<>();
+    public VeiculoServiceImpl(VeiculoReposity<T> veiculoReposity) {
+        this.veiculoReposity = veiculoReposity;
     }
 
     @Override
